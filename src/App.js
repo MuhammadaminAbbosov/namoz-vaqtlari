@@ -56,9 +56,9 @@ function App() {
     "Shanba",
   ];
   useEffect(() => {
-    // document.addEventListener("contextmenu", (e) => {
-    //   e.preventDefault();
-    // });
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+    });
 
     setInterval(() => {
       setTime(
@@ -338,6 +338,7 @@ const Wrapper = styled.div`
         font-size: 36px;
         color: white;
         font-weight: 600;
+        width: 165px;
         @media (max-width: 425px) {
           font-size: 20px;
         }
